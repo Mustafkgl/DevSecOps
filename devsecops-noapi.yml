@@ -1,1 +1,5 @@
 name: DevSecOps (no API, no 3rd-party actions)
+
+on:
+  push:
+    branches: [ "main", "master" ]
