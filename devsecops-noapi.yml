@@ -3,3 +3,5 @@ name: DevSecOps (no API, no 3rd-party actions)
 on:
   push:
     branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
