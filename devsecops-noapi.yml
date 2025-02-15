@@ -10,3 +10,6 @@ on:
 permissions:
   contents: write   # raporları repo'ya commitlemek için
   packages: read    # gerekmez ama dursun (push yok)
+  # security-events WRITE yok: REST API kullanmıyoruz
+
+jobs:
