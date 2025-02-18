@@ -13,3 +13,5 @@ permissions:
   # security-events WRITE yok: REST API kullanmıyoruz
 
 jobs:
+  pipeline:
+    runs-on: ubuntu-latest
