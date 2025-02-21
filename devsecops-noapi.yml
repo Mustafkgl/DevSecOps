@@ -15,3 +15,6 @@ permissions:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
+    env:
+      IMAGE_TAG: ${GITHUB_SHA}
+      REPORT_DIR: security-reports/${{ github.sha }}
