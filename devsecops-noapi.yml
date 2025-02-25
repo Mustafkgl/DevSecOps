@@ -18,3 +18,5 @@ jobs:
     env:
       IMAGE_TAG: ${GITHUB_SHA}
       REPORT_DIR: security-reports/${{ github.sha }}
+      QUALITY_GATE: high           # none|low|medium|high|critical (eşik)
+      COMMIT_REPORTS_ON_NONPR: "true"
