@@ -23,3 +23,5 @@ jobs:
 
     steps:
       # 1) Reposuz başla, KENDİN git fetch yap
+      - name: Fetch repository (no checkout action)
+        shell: bash
