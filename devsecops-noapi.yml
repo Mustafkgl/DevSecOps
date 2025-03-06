@@ -28,3 +28,5 @@ jobs:
         run: |
           set -euxo pipefail
           git init .
+          git config --global init.defaultBranch main
+          git config --global advice.detachedHead false
