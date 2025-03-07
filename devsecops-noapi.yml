@@ -30,3 +30,6 @@ jobs:
           git init .
           git config --global init.defaultBranch main
           git config --global advice.detachedHead false
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # PR ise kaynağı al, değilse SHA'yi
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
