@@ -33,3 +33,5 @@ jobs:
           git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           # PR ise kaynağı al, değilse SHA'yi
           if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch --depth=1 origin "pull/${{ github.event.number }}/head:pr-${{ github.event.number }}"
+            git checkout "pr-${{ github.event.number }}"
