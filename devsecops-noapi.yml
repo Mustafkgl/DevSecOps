@@ -35,3 +35,6 @@ jobs:
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git fetch --depth=1 origin "pull/${{ github.event.number }}/head:pr-${{ github.event.number }}"
             git checkout "pr-${{ github.event.number }}"
+          else
+            git fetch --depth=1 origin "${GITHUB_SHA}"
+            git checkout "${GITHUB_SHA}"
