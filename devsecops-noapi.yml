@@ -38,3 +38,5 @@ jobs:
           else
             git fetch --depth=1 origin "${GITHUB_SHA}"
             git checkout "${GITHUB_SHA}"
+          fi
+          git status
