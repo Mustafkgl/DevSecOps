@@ -40,3 +40,6 @@ jobs:
             git checkout "${GITHUB_SHA}"
           fi
           git status
+
+      # 2) Docker build (lokal; push yok)
+      - name: Build Docker image (local only)
