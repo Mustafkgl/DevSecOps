@@ -43,3 +43,5 @@ jobs:
 
       # 2) Docker build (lokal; push yok)
       - name: Build Docker image (local only)
+        shell: bash
+        run: |
