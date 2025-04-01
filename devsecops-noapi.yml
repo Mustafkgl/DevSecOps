@@ -45,3 +45,6 @@ jobs:
       - name: Build Docker image (local only)
         shell: bash
         run: |
+          set -euxo pipefail
+          docker version
+          docker build -t juice-shop:${{ env.IMAGE_TAG }} .
