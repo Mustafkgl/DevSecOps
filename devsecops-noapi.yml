@@ -48,3 +48,5 @@ jobs:
           set -euxo pipefail
           docker version
           docker build -t juice-shop:${{ env.IMAGE_TAG }} .
+
+      # 3) Syft kur ve SBOM üret (image + source)
