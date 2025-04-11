@@ -53,3 +53,5 @@ jobs:
       - name: Install Syft
         shell: bash
         run: |
+          set -euxo pipefail
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
