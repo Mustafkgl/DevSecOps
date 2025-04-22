@@ -58,3 +58,5 @@ jobs:
           syft version
 
       - name: Generate SBOMs (CycloneDX)
+        shell: bash
+        run: |
