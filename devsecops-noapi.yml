@@ -60,3 +60,6 @@ jobs:
       - name: Generate SBOMs (CycloneDX)
         shell: bash
         run: |
+          set -euxo pipefail
+          mkdir -p sbom
+          syft "juice-shop:${{ env.IMAGE_TAG }}" -o cyclonedx-json > sbom/sbom-image-cyclonedx.json
