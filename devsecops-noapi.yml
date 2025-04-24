@@ -63,3 +63,5 @@ jobs:
           set -euxo pipefail
           mkdir -p sbom
           syft "juice-shop:${{ env.IMAGE_TAG }}" -o cyclonedx-json > sbom/sbom-image-cyclonedx.json
+          syft dir:. -o cyclonedx-json > sbom/sbom-source-cyclonedx.json
+          echo "✅ SBOM dosyaları: sbom/sbom-image-cyclonedx.json, sbom/sbom-source-cyclonedx.json"
