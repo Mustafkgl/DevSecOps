@@ -65,3 +65,6 @@ jobs:
           syft "juice-shop:${{ env.IMAGE_TAG }}" -o cyclonedx-json > sbom/sbom-image-cyclonedx.json
           syft dir:. -o cyclonedx-json > sbom/sbom-source-cyclonedx.json
           echo "✅ SBOM dosyaları: sbom/sbom-image-cyclonedx.json, sbom/sbom-source-cyclonedx.json"
+
+      # 4) Grype kur ve zafiyet tara (JSON + SARIF üret)
+      - name: Install Grype
