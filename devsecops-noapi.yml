@@ -68,3 +68,5 @@ jobs:
 
       # 4) Grype kur ve zafiyet tara (JSON + SARIF üret)
       - name: Install Grype
+        shell: bash
+        run: |
