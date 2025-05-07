@@ -73,3 +73,5 @@ jobs:
           set -euxo pipefail
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
           grype version
+
+      - name: Vulnerability scan (JSON + SARIF)
