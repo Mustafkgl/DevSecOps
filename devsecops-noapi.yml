@@ -75,3 +75,6 @@ jobs:
           grype version
 
       - name: Vulnerability scan (JSON + SARIF)
+        shell: bash
+        continue-on-error: true   # rapor çıkabilsin; kalite kapısı bir sonraki adımda karar verir
+        run: |
