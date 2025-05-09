@@ -78,3 +78,5 @@ jobs:
         shell: bash
         continue-on-error: true   # rapor çıkabilsin; kalite kapısı bir sonraki adımda karar verir
         run: |
+          set -euxo pipefail
+          mkdir -p results
