@@ -80,3 +80,6 @@ jobs:
         run: |
           set -euxo pipefail
           mkdir -p results
+          # JSON ve SARIF çıktıları üret
+          grype "juice-shop:${{ env.IMAGE_TAG }}" -o json  > results/grype.json
+          grype "juice-shop:${{ env.IMAGE_TAG }}" -o sarif > results/grype.sarif
