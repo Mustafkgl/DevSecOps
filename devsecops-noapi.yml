@@ -83,3 +83,6 @@ jobs:
           # JSON ve SARIF çıktıları üret
           grype "juice-shop:${{ env.IMAGE_TAG }}" -o json  > results/grype.json
           grype "juice-shop:${{ env.IMAGE_TAG }}" -o sarif > results/grype.sarif
+          # kısa özet
+          command -v jq >/dev/null 2>&1 || { sudo apt-get update -y && sudo apt-get install -y jq; }
+          echo "---- Severity sayımı (JSON) ----"
