@@ -86,3 +86,5 @@ jobs:
           # kısa özet
           command -v jq >/dev/null 2>&1 || { sudo apt-get update -y && sudo apt-get install -y jq; }
           echo "---- Severity sayımı (JSON) ----"
+          jq -r '.matches[].vulnerability.severity' results/grype.json | sort | uniq -c | sed 's/^/  /'
+          echo "--------------------------------"
