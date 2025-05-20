@@ -88,3 +88,6 @@ jobs:
           echo "---- Severity sayımı (JSON) ----"
           jq -r '.matches[].vulnerability.severity' results/grype.json | sort | uniq -c | sed 's/^/  /'
           echo "--------------------------------"
+
+      # 5) Kalite kapısı (API yok; kendi jq kuralımız)
+      - name: Quality gate (fail on $QUALITY_GATE or above)
