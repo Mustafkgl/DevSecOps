@@ -91,3 +91,5 @@ jobs:
 
       # 5) Kalite kapısı (API yok; kendi jq kuralımız)
       - name: Quality gate (fail on $QUALITY_GATE or above)
+        shell: bash
+        run: |
