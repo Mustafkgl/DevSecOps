@@ -93,3 +93,5 @@ jobs:
       - name: Quality gate (fail on $QUALITY_GATE or above)
         shell: bash
         run: |
+          set -euxo pipefail
+          command -v jq >/dev/null 2>&1 || { sudo apt-get update -y && sudo apt-get install -y jq; }
