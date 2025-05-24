@@ -95,3 +95,6 @@ jobs:
         run: |
           set -euxo pipefail
           command -v jq >/dev/null 2>&1 || { sudo apt-get update -y && sudo apt-get install -y jq; }
+
+          THRESHOLD="${QUALITY_GATE}"
+          # severity sırası: negligible<low<medium<high<critical
