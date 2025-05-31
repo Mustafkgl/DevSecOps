@@ -98,3 +98,6 @@ jobs:
 
           THRESHOLD="${QUALITY_GATE}"
           # severity sırası: negligible<low<medium<high<critical
+          order() {
+            case "$1" in
+              negligible) echo 0 ;;
