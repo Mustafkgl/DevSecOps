@@ -101,3 +101,5 @@ jobs:
           order() {
             case "$1" in
               negligible) echo 0 ;;
+              low)        echo 1 ;;
+              medium)     echo 2 ;;
