@@ -103,3 +103,6 @@ jobs:
               negligible) echo 0 ;;
               low)        echo 1 ;;
               medium)     echo 2 ;;
+              high)       echo 3 ;;
+              critical)   echo 4 ;;
+              *)          echo -1 ;;
