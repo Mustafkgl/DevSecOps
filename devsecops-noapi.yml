@@ -106,3 +106,5 @@ jobs:
               high)       echo 3 ;;
               critical)   echo 4 ;;
               *)          echo -1 ;;
+            esac
+          }
