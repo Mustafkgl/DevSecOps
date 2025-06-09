@@ -108,3 +108,6 @@ jobs:
               *)          echo -1 ;;
             esac
           }
+
+          THRESH=$(order "$THRESHOLD")
+          # JSON içinden yüksek ya da eşik üzeri severity say
