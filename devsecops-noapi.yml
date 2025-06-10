@@ -111,3 +111,5 @@ jobs:
 
           THRESH=$(order "$THRESHOLD")
           # JSON içinden yüksek ya da eşik üzeri severity say
+          COUNT=$(jq -r '.matches[].vulnerability.severity' results/grype.json \
+            | awk -v T="$THRESH" '
