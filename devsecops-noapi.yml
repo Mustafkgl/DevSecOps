@@ -113,3 +113,5 @@ jobs:
           # JSON içinden yüksek ya da eşik üzeri severity say
           COUNT=$(jq -r '.matches[].vulnerability.severity' results/grype.json \
             | awk -v T="$THRESH" '
+              function ord(s){ if(s=="negligible")return 0; if(s=="low")return 1; if(s=="medium")return 2; if(s=="high")return 3; if(s=="critical")return 4; return -1 }
+              { if (ord(tolower($0)) >= T) c++ } END{ print c+0 }')
