@@ -115,3 +115,6 @@ jobs:
             | awk -v T="$THRESH" '
               function ord(s){ if(s=="negligible")return 0; if(s=="low")return 1; if(s=="medium")return 2; if(s=="high")return 3; if(s=="critical")return 4; return -1 }
               { if (ord(tolower($0)) >= T) c++ } END{ print c+0 }')
+
+          echo "Eşik: ${THRESHOLD} ve üzeri bulgu sayısı: ${COUNT}" | tee -a $GITHUB_STEP_SUMMARY
+          if [ "$COUNT" -gt 0 ]; then
