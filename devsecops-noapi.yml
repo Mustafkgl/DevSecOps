@@ -118,3 +118,6 @@ jobs:
 
           echo "Eşik: ${THRESHOLD} ve üzeri bulgu sayısı: ${COUNT}" | tee -a $GITHUB_STEP_SUMMARY
           if [ "$COUNT" -gt 0 ]; then
+            echo "⚠️  ${COUNT} adet ${THRESHOLD}+ zafiyet bulundu." | tee -a $GITHUB_STEP_SUMMARY
+            # İstersen kır: exit 1
+            # şimdilik uyarı bırakıyoruz; sertleştirmek için aşağıdaki satırı aç
