@@ -121,3 +121,5 @@ jobs:
             echo "⚠️  ${COUNT} adet ${THRESHOLD}+ zafiyet bulundu." | tee -a $GITHUB_STEP_SUMMARY
             # İstersen kır: exit 1
             # şimdilik uyarı bırakıyoruz; sertleştirmek için aşağıdaki satırı aç
+            # exit 1
+          else
