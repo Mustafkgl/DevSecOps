@@ -123,3 +123,5 @@ jobs:
             # şimdilik uyarı bırakıyoruz; sertleştirmek için aşağıdaki satırı aç
             # exit 1
           else
+            echo "✅ ${THRESHOLD}+ zafiyet bulunamadı." | tee -a $GITHUB_STEP_SUMMARY
+          fi
