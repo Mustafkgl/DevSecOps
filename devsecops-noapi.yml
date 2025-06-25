@@ -125,3 +125,6 @@ jobs:
           else
             echo "✅ ${THRESHOLD}+ zafiyet bulunamadı." | tee -a $GITHUB_STEP_SUMMARY
           fi
+
+      # 6) Raporları repo'ya yaz (PR değilse). API YOK; sadece git push.
+      - name: Commit reports back to repo (non-PR)
