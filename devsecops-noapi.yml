@@ -128,3 +128,6 @@ jobs:
 
       # 6) Raporları repo'ya yaz (PR değilse). API YOK; sadece git push.
       - name: Commit reports back to repo (non-PR)
+        if: ${{ github.event_name != 'pull_request' && env.COMMIT_REPORTS_ON_NONPR == 'true' }}
+        shell: bash
+        run: |
