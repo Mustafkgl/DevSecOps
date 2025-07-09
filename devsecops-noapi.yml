@@ -131,3 +131,5 @@ jobs:
         if: ${{ github.event_name != 'pull_request' && env.COMMIT_REPORTS_ON_NONPR == 'true' }}
         shell: bash
         run: |
+          set -euxo pipefail
+          BRANCH_NAME="${GITHUB_REF_NAME:-main}"
