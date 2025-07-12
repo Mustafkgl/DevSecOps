@@ -133,3 +133,6 @@ jobs:
         run: |
           set -euxo pipefail
           BRANCH_NAME="${GITHUB_REF_NAME:-main}"
+          mkdir -p "${REPORT_DIR}"
+          cp -r sbom results "${REPORT_DIR}/"
+          # küçük index
