@@ -138,3 +138,6 @@ jobs:
           # küçük index
           {
             echo "# Security Reports for ${GITHUB_SHA}"
+            echo
+            echo "- SBOM (image): \`${REPORT_DIR}/sbom/sbom-image-cyclonedx.json\`"
+            echo "- SBOM (source): \`${REPORT_DIR}/sbom/sbom-source-cyclonedx.json\`"
