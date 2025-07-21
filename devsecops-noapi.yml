@@ -143,3 +143,6 @@ jobs:
             echo "- SBOM (source): \`${REPORT_DIR}/sbom/sbom-source-cyclonedx.json\`"
             echo "- Grype JSON: \`${REPORT_DIR}/results/grype.json\`"
             echo "- Grype SARIF: \`${REPORT_DIR}/results/grype.sarif\`"
+            echo
+            echo "_Generated on $(date -u '+%Y-%m-%d %H:%M UTC')_"
+          } > "${REPORT_DIR}/README.md"
