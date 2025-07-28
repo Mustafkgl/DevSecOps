@@ -146,3 +146,5 @@ jobs:
             echo
             echo "_Generated on $(date -u '+%Y-%m-%d %H:%M UTC')_"
           } > "${REPORT_DIR}/README.md"
+
+          git config user.email "actions@github.com"
