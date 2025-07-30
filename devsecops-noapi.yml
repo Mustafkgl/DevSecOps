@@ -148,3 +148,6 @@ jobs:
           } > "${REPORT_DIR}/README.md"
 
           git config user.email "actions@github.com"
+          git config user.name  "github-actions"
+          git add "${REPORT_DIR}"
+          git commit -m "chore(security): reports for ${GITHUB_SHA} [skip ci]" || echo "No changes to commit."
