@@ -151,3 +151,5 @@ jobs:
           git config user.name  "github-actions"
           git add "${REPORT_DIR}"
           git commit -m "chore(security): reports for ${GITHUB_SHA} [skip ci]" || echo "No changes to commit."
+          # mevcut branşa pushla
+          git push origin "HEAD:${BRANCH_NAME}" || echo "Push skipped."
