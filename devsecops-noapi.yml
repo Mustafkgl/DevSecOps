@@ -153,3 +153,6 @@ jobs:
           git commit -m "chore(security): reports for ${GITHUB_SHA} [skip ci]" || echo "No changes to commit."
           # mevcut branşa pushla
           git push origin "HEAD:${BRANCH_NAME}" || echo "Push skipped."
+
+      # 7) Özet: SBOM yolları ve hızlı tablo
+      - name: Append summary (human-readable)
