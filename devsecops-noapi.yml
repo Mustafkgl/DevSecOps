@@ -156,3 +156,5 @@ jobs:
 
       # 7) Özet: SBOM yolları ve hızlı tablo
       - name: Append summary (human-readable)
+        shell: bash
+        run: |
