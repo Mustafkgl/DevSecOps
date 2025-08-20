@@ -163,3 +163,6 @@ jobs:
           echo "## SBOM yolları" >> $GITHUB_STEP_SUMMARY
           echo "- \`sbom/sbom-image-cyclonedx.json\`"  >> $GITHUB_STEP_SUMMARY
           echo "- \`sbom/sbom-source-cyclonedx.json\`" >> $GITHUB_STEP_SUMMARY
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Zafiyet özeti" >> $GITHUB_STEP_SUMMARY
