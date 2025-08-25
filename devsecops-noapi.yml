@@ -166,3 +166,5 @@ jobs:
 
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "## Zafiyet özeti" >> $GITHUB_STEP_SUMMARY
+          TOTAL=$(jq -r '.matches | length' results/grype.json)
+          echo "- Toplam bulgu: **$TOTAL**" >> $GITHUB_STEP_SUMMARY
