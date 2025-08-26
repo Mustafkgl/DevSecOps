@@ -168,3 +168,6 @@ jobs:
           echo "## Zafiyet özeti" >> $GITHUB_STEP_SUMMARY
           TOTAL=$(jq -r '.matches | length' results/grype.json)
           echo "- Toplam bulgu: **$TOTAL**" >> $GITHUB_STEP_SUMMARY
+
+          for sev in critical high medium low negligible; do
+            N=$(jq -r '.matches[].vulnerability.severity' results/grype.json | grep -i "^$sev$" | wc -l | xargs)
