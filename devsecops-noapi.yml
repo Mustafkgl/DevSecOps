@@ -171,3 +171,5 @@ jobs:
 
           for sev in critical high medium low negligible; do
             N=$(jq -r '.matches[].vulnerability.severity' results/grype.json | grep -i "^$sev$" | wc -l | xargs)
+            echo "  - ${sev^}: $N" >> $GITHUB_STEP_SUMMARY
+          done
