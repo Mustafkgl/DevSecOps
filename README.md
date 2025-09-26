@@ -7,3 +7,5 @@ The pipeline targets [OWASP Juice Shop](https://github.com/mustafkgl/juice-shop)
 ---
 
 ## Pipeline Architecture
+
+```
