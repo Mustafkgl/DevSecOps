@@ -12,3 +12,4 @@ The pipeline targets [OWASP Juice Shop](https://github.com/mustafkgl/juice-shop)
 git fetch (manual, no actions/checkout)
        │
        ▼
+ Docker build
