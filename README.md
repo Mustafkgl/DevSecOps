@@ -14,3 +14,4 @@ git fetch (manual, no actions/checkout)
        ▼
  Docker build
   juice-shop:$SHA
+       │
