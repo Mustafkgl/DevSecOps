@@ -16,3 +16,5 @@ git fetch (manual, no actions/checkout)
   juice-shop:$SHA
        │
        ├──► Syft ──► SBOM (CycloneDX JSON + SPDX)
+       │
+       ├──► Grype ──► Vulnerability scan (JSON + SARIF)
