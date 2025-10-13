@@ -18,3 +18,4 @@ git fetch (manual, no actions/checkout)
        ├──► Syft ──► SBOM (CycloneDX JSON + SPDX)
        │
        ├──► Grype ──► Vulnerability scan (JSON + SARIF)
+       │
