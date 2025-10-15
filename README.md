@@ -20,3 +20,4 @@ git fetch (manual, no actions/checkout)
        ├──► Grype ──► Vulnerability scan (JSON + SARIF)
        │
        └──► Quality Gate (bash/jq)
+                 │
