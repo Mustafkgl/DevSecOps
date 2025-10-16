@@ -21,3 +21,4 @@ git fetch (manual, no actions/checkout)
        │
        └──► Quality Gate (bash/jq)
                  │
+                 ├── PASS → commit reports to branch
