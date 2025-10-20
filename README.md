@@ -22,3 +22,5 @@ git fetch (manual, no actions/checkout)
        └──► Quality Gate (bash/jq)
                  │
                  ├── PASS → commit reports to branch
+                 └── FAIL → exit 1 (build blocked)
+```
