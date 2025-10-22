@@ -24,3 +24,5 @@ git fetch (manual, no actions/checkout)
                  ├── PASS → commit reports to branch
                  └── FAIL → exit 1 (build blocked)
 ```
+
+---
