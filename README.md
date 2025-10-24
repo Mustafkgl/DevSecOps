@@ -26,3 +26,5 @@ git fetch (manual, no actions/checkout)
 ```
 
 ---
+
+## Key Design Decisions
