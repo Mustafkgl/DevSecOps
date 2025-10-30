@@ -32,3 +32,4 @@ git fetch (manual, no actions/checkout)
 | Decision | Rationale |
 |---|---|
 | **Zero 3rd-party GitHub Actions** | Eliminates supply-chain attack surface (compromised actions in CI are a known vector — e.g., tj-actions/changed-files incident) |
+| **CycloneDX JSON SBOM** | Industry-standard format (NTIA-compliant), machine-parseable, supports downstream vulnerability correlation |
