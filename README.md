@@ -34,3 +34,4 @@ git fetch (manual, no actions/checkout)
 | **Zero 3rd-party GitHub Actions** | Eliminates supply-chain attack surface (compromised actions in CI are a known vector — e.g., tj-actions/changed-files incident) |
 | **CycloneDX JSON SBOM** | Industry-standard format (NTIA-compliant), machine-parseable, supports downstream vulnerability correlation |
 | **SARIF output** | Standard format for security tool results; compatible with GitHub Security tab and external SIEM ingestion |
+| **Configurable severity threshold** | Quality gate accepts `none\|low\|medium\|high\|critical` — allows teams to tune acceptable risk per environment (dev vs. prod) |
