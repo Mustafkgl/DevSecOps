@@ -36,3 +36,5 @@ git fetch (manual, no actions/checkout)
 | **SARIF output** | Standard format for security tool results; compatible with GitHub Security tab and external SIEM ingestion |
 | **Configurable severity threshold** | Quality gate accepts `none\|low\|medium\|high\|critical` — allows teams to tune acceptable risk per environment (dev vs. prod) |
 | **`[skip ci]` on report commits** | Prevents infinite pipeline loop when workflow commits scan results back to the repo |
+
+---
