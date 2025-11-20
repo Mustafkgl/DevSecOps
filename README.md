@@ -38,3 +38,5 @@ git fetch (manual, no actions/checkout)
 | **`[skip ci]` on report commits** | Prevents infinite pipeline loop when workflow commits scan results back to the repo |
 
 ---
+
+## Tools
