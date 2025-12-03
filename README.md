@@ -40,3 +40,6 @@ git fetch (manual, no actions/checkout)
 ---
 
 ## Tools
+
+| Tool | Role | Output Format |
+|---|---|---|
