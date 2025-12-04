@@ -43,3 +43,4 @@ git fetch (manual, no actions/checkout)
 
 | Tool | Role | Output Format |
 |---|---|---|
+| [Syft](https://github.com/anchore/syft) | SBOM generation | CycloneDX JSON, SPDX |
