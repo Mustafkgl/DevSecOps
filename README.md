@@ -45,3 +45,4 @@ git fetch (manual, no actions/checkout)
 |---|---|---|
 | [Syft](https://github.com/anchore/syft) | SBOM generation | CycloneDX JSON, SPDX |
 | [Grype](https://github.com/anchore/grype) | Vulnerability scanning (CVE matching against SBOM) | JSON, SARIF |
+| Docker | Image build | — |
