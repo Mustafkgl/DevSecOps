@@ -49,3 +49,5 @@ git fetch (manual, no actions/checkout)
 | bash + jq | Quality gate logic | Exit code (0 = pass, 1 = fail) |
 
 ---
+
+## Quality Gate
