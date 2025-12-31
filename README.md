@@ -53,3 +53,6 @@ git fetch (manual, no actions/checkout)
 ## Quality Gate
 
 The pipeline enforces a configurable severity threshold. Set `SEVERITY_THRESHOLD` in the workflow:
+
+```yaml
+env:
