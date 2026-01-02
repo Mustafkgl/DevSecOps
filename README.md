@@ -56,3 +56,4 @@ The pipeline enforces a configurable severity threshold. Set `SEVERITY_THRESHOLD
 
 ```yaml
 env:
+  SEVERITY_THRESHOLD: high   # none | low | medium | high | critical
