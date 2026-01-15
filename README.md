@@ -58,3 +58,5 @@ The pipeline enforces a configurable severity threshold. Set `SEVERITY_THRESHOLD
 env:
   SEVERITY_THRESHOLD: high   # none | low | medium | high | critical
 ```
+
+If any finding meets or exceeds the threshold, the pipeline exits with code `1`, blocking the build. This mirrors production-grade security gate behavior in enterprise DevSecOps environments.
