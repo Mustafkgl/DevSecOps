@@ -62,3 +62,5 @@ env:
 If any finding meets or exceeds the threshold, the pipeline exits with code `1`, blocking the build. This mirrors production-grade security gate behavior in enterprise DevSecOps environments.
 
 ---
+
+## Workflow File
