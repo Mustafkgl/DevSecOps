@@ -66,3 +66,5 @@ If any finding meets or exceeds the threshold, the pipeline exits with code `1`,
 ## Workflow File
 
 [`.github/workflows/devsecops-noapi.yml`](.github/workflows/devsecops-noapi.yml)
+
+---
