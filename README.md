@@ -74,3 +74,5 @@ If any finding meets or exceeds the threshold, the pipeline exits with code `1`,
 [`mustafkgl/juice-shop`](https://github.com/mustafkgl/juice-shop) — OWASP Juice Shop, an intentionally vulnerable Node.js application. Used here as a realistic pipeline target: a real-world application with known CVEs in its dependency tree, demonstrating that the quality gate correctly identifies and blocks on actual vulnerability data.
 
 ---
+
+## Related
