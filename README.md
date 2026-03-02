@@ -76,3 +76,5 @@ If any finding meets or exceeds the threshold, the pipeline exits with code `1`,
 ---
 
 ## Related
+
+- [`mustafkgl/secure-container-lab`](https://github.com/mustafkgl/secure-container-lab) — Container hardening companion project: reduces a Node.js image from 1,675 to 12 CVEs using Distroless base images, multi-stage builds, and runtime hardening.
